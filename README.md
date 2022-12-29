@@ -3,28 +3,34 @@ An app to help you stay organized and manage your day-to-day.
 
 This repository uses [FastAPI](https://fastapi.tiangolo.com) for creating APIs & [Jinja2](https://pypi.org/project/Jinja2/) for creaeting and using the HTML templates and [SqlAlchemy](https://docs.sqlalchemy.org/en/14/dialects/sqlite.html) Python sql database library to maintain the CRUD operation's data.
 
-To access the Swagger UI for the application, click on the URL. https://todoapp.herokuapp.com/docs
-
 ## Installtion
 
 ```sh
-git clone https://github.com/Ritesh-Kumar-Mandal/Auth.git
-cd Auth
+git clone https://github.com/Ritesh-Kumar-Mandal/TodoList.git
+cd TodoList
 py -m venv venv 
 source venv/Scripts/activate 
 pip3 install -r requirements.txt
 uvicorn main:app --reload
 ```
+## SwaggerUI
+![SwaggerUI](https://github.com/Ritesh-Kumar-Mandal/TodoList/blob/3b5147a69be95fe2277d88f89f6832766b026b54/screenshots/SwaggerUI.png)
+This is how the Swagger UI for the App appears.
 
 ## HomePage
-![Auth](https://github.com/Ritesh-Kumar-Mandal/Lifeopedia/blob/53e358a20d766f08c4579d92d1aa20f5c9c099b9/ScreenShots/APIs/admin-controls.png)
+![HomePage](https://github.com/Ritesh-Kumar-Mandal/TodoList/blob/3b5147a69be95fe2277d88f89f6832766b026b54/screenshots/HomePage.png)
+The Home page of the TODO app.
 
 ## Add to List
-![Admin](https://github.com/Ritesh-Kumar-Mandal/Lifeopedia/blob/53e358a20d766f08c4579d92d1aa20f5c9c099b9/ScreenShots/APIs/auth.png)
+![Add](https://github.com/Ritesh-Kumar-Mandal/TodoList/blob/3b5147a69be95fe2277d88f89f6832766b026b54/screenshots/Add.png)
+To add to the list of things to do. Enter the Task in the input text field, then click ADD or press enter.
+
 
 ## Update in List
-![User](https://github.com/Ritesh-Kumar-Mandal/Lifeopedia/blob/dfd49d2479ab902a81820249f2da12702e9dc0fb/ScreenShots/APIs/user-controls.png)
-Users have less CRUD control than administrators. The current user can view, change or update his or her own information, which is stored in the database.
+![Update](https://github.com/Ritesh-Kumar-Mandal/TodoList/blob/3b5147a69be95fe2277d88f89f6832766b026b54/screenshots/Update.png)
+Click on update to change the status of the listed tasks to completed.
 
 ## Delete from List
-After entering the correct login credentials, the user will receive a JSON Web Token that will be valid for an hour or until the user logs out.
+![Delete1](https://github.com/Ritesh-Kumar-Mandal/TodoList/blob/3b5147a69be95fe2277d88f89f6832766b026b54/screenshots/Delete.png)
+![Delete2](https://github.com/Ritesh-Kumar-Mandal/TodoList/blob/3b5147a69be95fe2277d88f89f6832766b026b54/screenshots/AfterDelete.png)
+To delete a task, click the delete button, and the task will be deleted.
