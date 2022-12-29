@@ -15,7 +15,7 @@ templates = Jinja2Templates(directory="templates")
 app = FastAPI(docs_url="/docs",
     redoc_url="/redocs",
     title="To Do  [Python(FastAPI)]",
-    description="An app to help you stay organized and manage your day-to-day",
+    description="An app to help you stay organized and manage your day-to-day.",
     version="0.1.0",
     openapi_url="/openapi.json")
 
